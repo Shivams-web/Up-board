@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101828">
+<title>90% Mission | UP Board 2027</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+:root{--ink:#101828;--muted:#667085;--line:#eaecf0;--bg:#f5f7fb;--white:#fff;--navy:#101828;--blue:#4263eb;--violet:#7950f2;--green:#12a36d;--orange:#f59f00;--shadow:0 12px 36px rgba(16,24,40,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Noto Sans Devanagari",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}
+.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:var(--navy);color:#fff;padding:26px 18px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}.brand{display:flex;gap:12px;align-items:center;padding:0 8px 28px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#7c5cff,#3b82f6);display:grid;place-items:center;font-weight:800;font-size:17px}.brand strong{display:block;font-size:15px;letter-spacing:.2px}.brand small{color:#98a2b3;font-size:11px}.navlabel{color:#667085;font-size:10px;font-weight:800;letter-spacing:1.5px;padding:10px 12px}.nav button{width:100%;border:0;background:transparent;color:#cbd5e1;text-align:left;padding:12px;border-radius:11px;margin:3px 0;display:flex;gap:12px;align-items:center;font-size:13px}.nav button.active,.nav button:hover{background:#25324a;color:#fff}.nav .ico{width:20px;text-align:center;font-size:16px}.sidebottom{margin-top:auto;border-top:1px solid #263247;padding:18px 8px 0;color:#98a2b3;font-size:11px;line-height:1.7}.sidebottom b{color:#fff}
+main{min-width:0;padding:30px 36px 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:16px}.eyebrow{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:1px;text-transform:uppercase}.topbar h1{font-size:25px;margin:5px 0 0;letter-spacing:-.7px}.datepill{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:12px;color:#475467;font-size:12px;font-weight:700}
+.hero{background:linear-gradient(115deg,#101828 0%,#263c69 62%,#4f46a5 100%);color:#fff;border-radius:22px;padding:27px 30px;position:relative;overflow:hidden;box-shadow:var(--shadow)}.hero:after{content:"";position:absolute;width:290px;height:290px;border:1px solid #ffffff20;border-radius:50%;right:7%;top:-170px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}.hero-content{position:relative;z-index:1;max-width:680px}.hero .tag{display:inline-block;background:#ffffff1c;border:1px solid #ffffff26;padding:6px 10px;border-radius:30px;font-size:10px;font-weight:800;letter-spacing:1px}.hero h2{font-size:clamp(23px,3vw,34px);line-height:1.25;margin:14px 0 8px}.hero p{margin:0;color:#d6dded;font-size:13px;line-height:1.7}.hero-bottom{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px}.hero-stat small{display:block;color:#b8c4dc;font-size:10px}.hero-stat b{font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:20px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 3px 12px #10182805}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;font-weight:700}.stat-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#eef2ff;font-size:16px}.stat strong{display:block;font-size:25px;margin:9px 0 2px;letter-spacing:-1px}.stat small{color:#98a2b3;font-size:10px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin:28px 0 13px;gap:12px}.section-head h3{font-size:17px;margin:0}.section-head p{font-size:11px;color:var(--muted);margin:4px 0 0}.linkbtn{border:0;background:transparent;color:var(--blue);font-size:12px;font-weight:700}
+.panel{background:#fff;border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:0 3px 12px #10182805}.today-layout{display:grid;grid-template-columns:1.4fr .8fr;gap:16px}.task{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f0f1f4}.task:last-child{border:0}.check{appearance:none;width:19px;height:19px;border:1.7px solid #c7ced8;border-radius:6px;flex:none;cursor:pointer;position:relative}.check:checked{background:#12a36d;border-color:#12a36d}.check:checked:after{content:"✓";color:#fff;position:absolute;left:3px;top:-1px;font-size:14px;font-weight:800}.tasktext{flex:1;min-width:0}.tasktext b{font-size:12px;display:block}.tasktext small{color:var(--muted);font-size:10px}.time{font-size:10px;color:#667085;background:#f5f6f8;padding:6px 8px;border-radius:7px;white-space:nowrap}.progressbar{height:8px;background:#eef0f4;border-radius:20px;overflow:hidden}.progressbar span{height:100%;display:block;background:linear-gradient(90deg,#4263eb,#8b5cf6);border-radius:20px;transition:width .25s}.progressrow{display:flex;justify-content:space-between;font-size:11px;margin:12px 0 8px}.focusbox{background:#f8f9ff;border:1px solid #e7eaff;border-radius:13px;padding:15px;margin-top:14px}.focusbox small{color:#6975a7;font-size:10px;font-weight:800}.focusbox b{display:block;font-size:14px;margin:6px 0}.focusbox p{font-size:11px;color:#667085;line-height:1.6;margin:0}
+.phase-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.phase{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px}.phase .num{font-size:10px;color:var(--blue);font-weight:800}.phase b{display:block;font-size:12px;margin:7px 0}.phase small{font-size:10px;color:var(--muted);line-height:1.5}
+.schedule-tools{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.field{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px;font-size:12px;color:var(--ink)}.schedule-table{width:100%;border-collapse:collapse;font-size:12px}.schedule-table th{text-align:left;color:#667085;background:#f8f9fb;padding:12px 10px;font-size:10px;letter-spacing:.4px}.schedule-table td{padding:12px 10px;border-bottom:1px solid #f0f1f4;vertical-align:top}.schedule-table tr:hover td{background:#fafbff}.schedule-table td:first-child{white-space:nowrap;font-weight:800}.subject{display:inline-block;font-size:9px;font-weight:800;border-radius:5px;padding:3px 6px;margin-bottom:4px}.math{background:#edf2ff;color:#3656c8}.physics{background:#fff1e6;color:#bd651e}.chem{background:#e9f8f1;color:#16845a}.lang{background:#f3edff;color:#7547c8}
+.tabbar{display:flex;gap:7px;overflow:auto;padding:3px 0 10px}.tab{border:1px solid var(--line);background:#fff;border-radius:9px;padding:9px 13px;font-size:11px;font-weight:700;white-space:nowrap;color:#667085}.tab.active{background:#101828;color:#fff;border-color:#101828}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.routine{display:grid;grid-template-columns:105px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid #f0f1f4}.routine:last-child{border:0}.routine time{font-size:11px;font-weight:800;color:#4263eb}.routine b{font-size:12px}.routine small{display:block;color:#98a2b3;font-size:10px;margin-top:3px}
+.subject-card{border:1px solid var(--line);border-radius:14px;padding:15px}.subject-card h4{margin:0 0 8px;font-size:13px}.subject-card p{font-size:11px;color:#667085;line-height:1.7;margin:0}
+.muted{color:var(--muted)}.empty{padding:30px;text-align:center;color:var(--muted);font-size:12px}
+.mobile-nav{display:none}
+@media(max-width:1000px){.app{grid-template-columns:210px 1fr}.sidebar{padding:20px 12px}main{padding:24px 22px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.app{display:block}.sidebar{display:none}main{padding:19px 14px 90px}.topbar{margin-bottom:17px}.topbar h1{font-size:21px}.datepill{font-size:10px;padding:8px}.hero{padding:22px 20px;border-radius:18px}.hero-bottom{gap:16px}.grid{gap:9px;margin:13px 0}.stat{padding:13px}.stat strong{font-size:22px}.stat-top{font-size:10px}.today-layout,.two-col{grid-template-columns:1fr}.phase-list{grid-template-columns:repeat(2,1fr);gap:9px}.phase{padding:12px}.panel{padding:14px}.schedule-table{min-width:720px}.tablewrap{overflow:auto}.mobile-nav{display:flex;position:fixed;z-index:10;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:8px 5px calc(8px + env(safe-area-inset-bottom));justify-content:space-around}.mobile-nav button{border:0;background:transparent;color:#667085;font-size:9px;display:grid;gap:3px;justify-items:center}.mobile-nav button.active{color:#4263eb;font-weight:800}.mobile-nav span{font-size:17px}.routine{grid-template-columns:92px 1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="logo">90+</div><div><strong>MISSION 90</strong><small>UP BOARD • 2027</small></div></div>
+ <div class="navlabel">STUDY SPACE</div>
+ <nav class="nav">
+  <button class="active" data-page="dashboard"><span class="ico">▦</span>Dashboard</button>
+  <button data-page="planner"><span class="ico">▤</span>Study Planner</button>
+  <button data-page="routine"><span class="ico">◷</span>Daily Timetable</button>
+  <button data-page="progress"><span class="ico">◉</span>My Progress</button>
+  <button data-page="practical"><span class="ico">⌁</span>Practical Prep</button>
+ </nav>
+ <div class="sidebottom">YOUR PERSONAL STUDY SPACE<br><b>Developer: Shivam Vishwakarma</b><br>Made for your 90%+ mission.</div>
+</aside>
+<main>
+ <div class="topbar"><div><div class="eyebrow">UP BOARD INTERMEDIATE • 2027</div><h1 id="pageTitle">Good evening, Student 👋</h1></div><div class="datepill" id="todayDate">6 NOV 2026</div></div>
+ <section id="dashboard" class="page">
+  <div class="hero"><div class="hero-content"><span class="tag">YOUR 90%+ MISSION STARTS HERE</span><h2>One day at a time.<br>One goal at a time.</h2><p>Class 12 · PCM + Hindi + English. अपने आज के लक्ष्य पूरे करो, प्रगति दर्ज करो और बोर्ड परीक्षा की तैयारी मजबूत बनाओ।</p><div class="hero-bottom"><div class="hero-stat"><small>MISSION PERIOD</small><b>06 Nov 2026 — 04 Feb 2027</b></div><div class="hero-stat"><small>DAILY LIBRARY</small><b>09:00 AM — 06:00 PM</b></div><div class="hero-stat"><small>STUDY MEDIUM</small><b>हिंदी</b></div></div></div></div>
+  <div class="grid">
+   <div class="stat"><div class="stat-top">Overall completion <span class="stat-icon">◉</span></div><strong id="overall">0%</strong><small>पूरे 91 दिन के tasks</small></div>
+   <div class="stat"><div class="stat-top">Today's tasks <span class="stat-icon">✓</span></div><strong id="todayCount">0/5</strong><small>आज के मुख्य लक्ष्य</small></div>
+   <div class="stat"><div class="stat-top">Days in mission <span class="stat-icon">▦</span></div><strong id="dayNumber">Day 1</strong><small>कुल 91 दिन</small></div>
+   <div class="stat"><div class="stat-top">Study streak <span class="stat-icon">♨</span></div><strong id="streak">0 days</strong><small>लगातार पूरे किए दिन</small></div>
+  </div>
+  <div class="section-head"><div><h3>Today's focus</h3><p>आज के पाँच जरूरी लक्ष्य पूरे करो</p></div><button class="linkbtn" onclick="showPage('planner')">पूरा प्लान देखें →</button></div>
+  <div class="today-layout">
+   <div class="panel"><div id="todayTasks"></div><div class="progressrow"><b>Daily progress</b><span id="todayPct">0%</span></div><div class="progressbar"><span id="todayBar" style="width:0%"></span></div></div>
+   <div class="panel"><div class="eyebrow">YOUR DAILY REMINDER</div><h3 style="font-size:16px;margin:8px 0">Consistency beats intensity.</h3><p class="muted" style="font-size:11px;line-height:1.7">कोई दिन छूट जाए तो अगले दिन दोगुना पढ़ने की जरूरत नहीं। छूटा हुआ काम अगले खाली revision slot में पूरा करो।</p><div class="focusbox"><small>MISSION RULE</small><b>पढ़ो • लिखो • दोहराओ</b><p>वीडियो देखने के बाद कॉपी में सवाल जरूर हल करो।</p></div></div>
+  </div>
+  <div class="section-head"><div><h3>Mission roadmap</h3><p>91 दिनों के चार study phases</p></div></div>
+  <div class="phase-list">
+   <div class="phase"><span class="num">PHASE 01 · 25 DAYS</span><b>Basics & Foundation</b><small>6–30 November<br>बेसिक मजबूत करना और सिलेबस शुरू करना</small></div>
+   <div class="phase"><span class="num">PHASE 02 · 31 DAYS</span><b>Complete Syllabus</b><small>1–31 December<br>सिलेबस पूरा और लिखकर अभ्यास</small></div>
+   <div class="phase"><span class="num">PHASE 03 · 20 DAYS</span><b>Board Practice</b><small>1–20 January<br>मॉडल पेपर और बोर्ड स्तर की तैयारी</small></div>
+   <div class="phase"><span class="num">PHASE 04 · 15 DAYS</span><b>Final Revision</b><small>21 Jan–4 Feb<br>रिवीजन और प्रैक्टिकल तैयारी</small></div>
+  </div>
+ </section>
+ <section id="planner" class="page" hidden>
+  <div class="section-head"><div><h3>Study Planner</h3><p>तारीख चुनो और उस दिन का पूरा study target देखो</p></div></div>
+  <div class="tabbar" id="phaseTabs"><button class="tab active" data-phase="nov">November</button><button class="tab" data-phase="dec">December</button><button class="tab" data-phase="jan">January</button><button class="tab" data-phase="feb">February</button></div>
+  <div class="schedule-tools"><input id="searchDate" class="field" placeholder="अध्याय या तारीख खोजें..." style="flex:1;min-width:180px"><select id="filterSubject" class="field"><option value="all">सभी विषय</option><option>Maths</option><option>Physics</option><option>Chemistry</option><option>Language / Extra</option></select></div>
+  <div class="panel tablewrap"><table class="schedule-table"><thead><tr><th>DATE</th><th>MATHS</th><th>PHYSICS</th><th>CHEMISTRY</th><th>LANGUAGE / EXTRA</th></tr></thead><tbody id="scheduleBody"></tbody></table></div>
+ </section>
+ <section id="routine" class="page" hidden>
+  <div class="section-head"><div><h3>Daily Timetable</h3><p>हर दिन 9 AM से 6 PM तक fixed library routine</p></div></div>
+  <div class="two-col"><div class="panel" id="routineList"></div><div class="panel"><div class="eyebrow">HOW TO STUDY</div><h3 style="font-size:15px">हर session का सही तरीका</h3><div class="subject-card"><h4>🔵 Maths</h4><p>Concept + solved examples + खुद से लिखकर सवाल हल करना।</p></div><div class="subject-card" style="margin-top:9px"><h4>🟠 Physics</h4><p>Theory + सूत्र + derivations + numericals का अभ्यास।</p></div><div class="subject-card" style="margin-top:9px"><h4>🟢 Chemistry</h4><p>Theory + reactions + numericals और लिखित प्रश्न।</p></div><div class="subject-card" style="margin-top:9px"><h4>🟣 Hindi / English</h4><p>पाठ पढ़ना + लेखक/कवि परिचय + उत्तर लिखने का अभ्यास।</p></div></div></div>
+ </section>
+ <section id="progress" class="page" hidden>
+  <div class="section-head"><div><h3>My Progress</h3><p>तुम्हारी मेहनत का रिकॉर्ड इसी डिवाइस में सेव होगा</p></div></div>
+  <div class="grid"><div class="stat"><div class="stat-top">Tasks completed</div><strong id="doneTotal">0</strong><small>अब तक पूरे किए</small></div><div class="stat"><div class="stat-top">Tasks remaining</div><strong id="leftTotal">0</strong><small>बाकी tasks</small></div><div class="stat"><div class="stat-top">Completion rate</div><strong id="rateTotal">0%</strong><small>कुल प्रगति</small></div><div class="stat"><div class="stat-top">Mission length</div><strong>91 days</strong><small>6 Nov – 4 Feb</small></div></div>
+  <div class="panel"><h3 style="font-size:15px;margin-top:0">Weekly performance card</h3><p class="muted" style="font-size:11px">हर रविवार अपनी तैयारी का हिसाब करो। नीचे के checkpoints को पूरा होने पर tick करो।</p><div id="weeklyChecks"></div><div class="progressrow"><b>Weekly progress</b><span id="weeklyPct">0%</span></div><div class="progressbar"><span id="weeklyBar" style="width:0%"></span></div><div class="schedule-tools"><button class="tab" onclick="resetWeekly()">अगले सप्ताह Reset</button><button class="tab" onclick="exportData()">Backup डाउनलोड</button><label class="tab" for="importFile">Backup Restore</label><input id="importFile" type="file" accept="application/json" hidden></div></div>
+ </section>
+ <section id="practical" class="page" hidden>
+  <div class="section-head"><div><h3>Practical Preparation</h3><p>प्रैक्टिकल को आखिरी दिनों के लिए मत छोड़ो</p></div></div>
+  <div class="two-col">
+   <div class="panel"><h3 style="font-size:15px">⚡ Physics Practical</h3><div id="phyChecks"></div></div>
+   <div class="panel"><h3 style="font-size:15px">🧪 Chemistry Practical</h3><div id="chemChecks"></div></div>
+   <div class="panel"><h3 style="font-size:15px">📐 Maths Practical / Internal</h3><div id="mathChecks"></div></div>
+   <div class="panel"><h3 style="font-size:15px">📌 Practical routine</h3><p class="muted" style="font-size:12px;line-height:1.8">दिसंबर से हर सप्ताह कम से कम दो practical preparation slots रखो। Physics और Chemistry के प्रयोग, रिकॉर्ड और viva की तैयारी नियमित करो।</p><div class="focusbox"><small>REMEMBER</small><b>समझकर लिखो, रटकर नहीं।</b><p>अपने स्कूल/शिक्षक द्वारा दिए गए practical syllabus को प्राथमिकता दो।</p></div></div>
+  </div>
+ </section>
+ <footer style="text-align:center;color:#98a2b3;font-size:10px;padding:28px 0 8px">MISSION 90 • UP BOARD 2027 <br>Designed & developed by <b style="color:#667085">Shivam Vishwakarma</b></footer>
+</main>
+</div>
+<div class="mobile-nav">
+ <button class="active" data-page="dashboard"><span>▦</span>Home</button><button data-page="planner"><span>▤</span>Planner</button><button data-page="routine"><span>◷</span>Routine</button><button data-page="progress"><span>◉</span>Progress</button><button data-page="practical"><span>⌁</span>Practical</button>
+</div>
+<script>
+const data = {
+nov:[
+["6 Nov","संबंध एवं फलन","विद्युत आवेश","विलयन परिचय","Hindi गद्य 1"],
+["7 Nov","संबंधों के प्रकार","कूलॉम का नियम","विलयन की सांद्रता","English: Last Lesson"],
+["8 Nov","प्रतिलोम त्रिकोणमिति","विद्युत क्षेत्र","राउल्ट का नियम","Hindi लेखक परिचय"],
+["9 Nov","प्रतिलोम त्रिकोणमिति अभ्यास","विद्युत क्षेत्र रेखाएँ","अणुसंख्यक गुणधर्म","English: Lost Spring"],
+["10 Nov","आव्यूह परिचय","विद्युत द्विध्रुव","परासरण दाब","Hindi: अशोक के फूल"],
+["11 Nov","आव्यूह के प्रकार","गाउस नियम","विलयन न्यूमेरिकल","English: Deep Water"],
+["12 Nov","आव्यूह संक्रियाएँ","विद्युत विभव","Electrochemistry परिचय","Hindi: भाषा और आधुनिकता"],
+["13 Nov","आव्यूह का परिवर्त","विभवांतर","चालकता","English: The Rattrap"],
+["14 Nov","आव्यूह अभ्यास","संधारित्र","कोलराउश नियम","Hindi: तेजस्वी मन"],
+["15 Nov","सारणिक परिचय","संधारित्र संयोजन","सेल और EMF","English: Indigo"],
+["16 Nov","सारणिक का प्रसार","संधारित्र ऊर्जा","नर्न्स्ट समीकरण","Hindi: कहानी 1"],
+["17 Nov","सारणिक के गुण","विद्युत धारा","Electrochemistry Numericals","English: Poets and Pancakes"],
+["18 Nov","सारणिक के अनुप्रयोग","ओम का नियम","रासायनिक बलगतिकी परिचय","Hindi: कविता 1"],
+["19 Nov","आव्यूह-सारणिक टेस्ट","प्रतिरोध और प्रतिरोधकता","अभिक्रिया की दर","English: Interview"],
+["20 Nov","सांतत्य","अपवाह वेग","अभिक्रिया की कोटि","Hindi: कविता 2"],
+["21 Nov","अवकलनीयता","किरचॉफ नियम","अर्ध-आयु","English: Going Places"],
+["22 Nov","श्रृंखला नियम","सेल संयोजन","Arrhenius समीकरण","साप्ताहिक टेस्ट"],
+["23 Nov","मूल अवकलज","चुंबकीय क्षेत्र","d-ब्लॉक परिचय","Hindi: कहानी 2"],
+["24 Nov","अवकलज अभ्यास","बायो-सावर्ट नियम","संक्रमण तत्व","English: My Mother at Sixty-Six"],
+["25 Nov","प्रतिलोम त्रिकोणमितीय अवकलज","एम्पियर नियम","d-ब्लॉक गुण","Hindi व्याकरण"],
+["26 Nov","अधिकतम-न्यूनतम","धारावाही तार पर बल","f-ब्लॉक तत्व","English: Keeping Quiet"],
+["27 Nov","अवकलज अनुप्रयोग","गैल्वेनोमीटर","उपसहसंयोजन परिचय","Hindi: निबंध"],
+["28 Nov","सांतत्य-अवकलनीयता टेस्ट","चुंबकीय द्विध्रुव","लिगैंड और समन्वय संख्या","English Grammar"],
+["29 Nov","Maths कमजोर सवाल","Physics पुनरावृत्ति","Chemistry पुनरावृत्ति","Practical रिकॉर्ड"],
+["30 Nov","मासिक टेस्ट","मासिक टेस्ट","मासिक टेस्ट","Hindi + English टेस्ट"]
+],
+dec:[
+["1 Dec","अवकलज के अनुप्रयोग","चुंबकीय क्षेत्र में आवेश","उपसहसंयोजन यौगिक","Hindi: कहानी 3"],
+["2 Dec","बढ़ती-घटती फलन","धारावाही चालक पर बल","IUPAC नामकरण","English: A Thing of Beauty"],
+["3 Dec","उच्चतम-निम्नतम","विद्युत मोटर सिद्धांत","VBT और CFT","Hindi: कविता 3"],
+["4 Dec","समाकलन परिचय","विद्युत चुंबकीय प्रेरण","हैलोऐल्केन","English: The Third Level"],
+["5 Dec","प्रतिस्थापन विधि","फैराडे नियम","हैलोऐरीन","Hindi: रस"],
+["6 Dec","समाकलन अभ्यास","लेंज नियम","अभिक्रिया क्रियाविधि","साप्ताहिक टेस्ट"],
+["7 Dec","आंशिक भिन्न","स्वप्रेरण","ऐल्कोहॉल","English: Tiger King"],
+["8 Dec","समाकलन के प्रकार","प्रत्यावर्ती धारा","फिनॉल","Hindi: कहानी 4"],
+["9 Dec","निश्चित समाकलन","AC के सूत्र","ईथर","English: Roadside Stand"],
+["10 Dec","निश्चित समाकलन गुण","LCR परिपथ","ऐल्डिहाइड","Hindi: कविता 4"],
+["11 Dec","समाकलनों के अनुप्रयोग","ट्रांसफॉर्मर","कीटोन","English: Journey to the End of the Earth"],
+["12 Dec","वक्र के नीचे क्षेत्रफल","विद्युत चुंबकीय तरंगें","कार्बोक्सिलिक अम्ल","Hindi: छंद"],
+["13 Dec","अवकल समीकरण परिचय","किरण प्रकाशिकी","ऐमीन परिचय","साप्ताहिक टेस्ट"],
+["14 Dec","अवकल समीकरण कोटि और घात","दर्पण","ऐमीन अभिक्रियाएँ","English: Enemy"],
+["15 Dec","अवकल समीकरण हल","लेंस","डाइऐजोनियम लवण","Hindi: अलंकार"],
+["16 Dec","सदिश परिचय","अपवर्तन","जैव अणु – कार्बोहाइड्रेट","English: On the Face of It"],
+["17 Dec","सदिश के घटक","पूर्ण आंतरिक परावर्तन","प्रोटीन","Hindi: खंडकाव्य"],
+["18 Dec","सदिश योग","प्रिज्म","विटामिन और न्यूक्लिक अम्ल","English: Aunt Jennifer's Tigers"],
+["19 Dec","अदिश गुणनफल","सूक्ष्मदर्शी","Organic Revision","Hindi: पत्र लेखन"],
+["20 Dec","सदिश गुणनफल","खगोलीय दूरदर्शी","Inorganic Revision","साप्ताहिक टेस्ट"],
+["21 Dec","रेखा का सदिश समीकरण","तरंगाग्र","Physical Chemistry Revision","English: Memories of Childhood"],
+["22 Dec","त्रिविमीय ज्यामिति","हाइगेंस सिद्धांत","सभी महत्वपूर्ण अभिक्रियाएँ","Hindi: संस्कृत गद्य"],
+["23 Dec","दो रेखाओं के बीच कोण","व्यतिकरण","कार्बनिक नामकरण","English Reading"],
+["24 Dec","दो रेखाओं की न्यूनतम दूरी","यंग का द्वि-झिरी प्रयोग","Organic Conversions","Hindi: संस्कृत पद्य"],
+["25 Dec","रैखिक प्रोग्रामन","विवर्तन और ध्रुवण","Chemistry Numerical Test","English Writing"],
+["26 Dec","प्रायिकता परिचय","प्रकाश विद्युत प्रभाव","जैव अणु Revision","Hindi Grammar"],
+["27 Dec","सशर्त प्रायिकता","द्रव्य तरंगें","Chemistry Full Test","साप्ताहिक टेस्ट"],
+["28 Dec","बेयज प्रमेय","परमाणु मॉडल","सभी 10 अध्यायों का रिवीजन","English Grammar"],
+["29 Dec","पुनरावृत्ति: Calculus","नाभिक","Practical: Salt Analysis","Hindi Writing"],
+["30 Dec","Maths Full Test","अर्धचालक","Practical: Volumetric Analysis","English Writing"],
+["31 Dec","Maths गलतियों का सुधार","Physics Full Test","Chemistry Full Test","मासिक मूल्यांकन"]
+],
+jan:[
+["1 Jan","संबंध, फलन और प्रतिलोम त्रिकोणमिति के प्रश्न","—","—","Maths practice"],
+["2 Jan","आव्यूह और सारणिक का टेस्ट","—","—","Maths practice"],
+["3 Jan","—","स्थिरवैद्युत के सभी प्रश्न","—","Physics practice"],
+["4 Jan","—","—","विलयन और विद्युत रसायन","Chemistry practice"],
+["5 Jan","—","—","—","Hindi: गद्य, कहानी और लेखक परिचय"],
+["6 Jan","—","—","—","English: Flamingo Prose Revision"],
+["7 Jan","सांतत्य, अवकलनीयता और अनुप्रयोग","—","—","Maths practice"],
+["8 Jan","—","विद्युत धारा और चुंबकत्व","—","Physics practice"],
+["9 Jan","—","—","रासायनिक बलगतिकी और d-f ब्लॉक","Chemistry practice"],
+["10 Jan","समाकलन और अवकल समीकरण","—","—","Maths practice"],
+["11 Jan","—","EMI और AC","—","Physics practice"],
+["12 Jan","—","—","उपसहसंयोजन और हैलोऐल्केन","Chemistry practice"],
+["13 Jan","—","—","—","Hindi: पद्य, कवि परिचय और खंडकाव्य"],
+["14 Jan","—","—","—","English: Poetry और Vistas"],
+["15 Jan","सदिश और त्रिविमीय ज्यामिति","—","—","Maths practice"],
+["16 Jan","—","प्रकाशिकी","—","Physics practice"],
+["17 Jan","—","—","Organic Chemistry Revision","Chemistry practice"],
+["18 Jan","प्रायिकता और रैखिक प्रोग्रामन","—","—","Maths practice"],
+["19 Jan","—","परमाणु, नाभिक और इलेक्ट्रॉनिकी","—","Physics practice"],
+["20 Jan","संयुक्त टेस्ट","संयुक्त टेस्ट","संयुक्त टेस्ट","तीनों विषयों का टेस्ट और गलतियों का सुधार"]
+],
+feb:[
+["21 Jan","पूरा पाठ्यक्रम – Formula Revision","—","—","Maths"],
+["22 Jan","—","पूरा पाठ्यक्रम – Derivations","—","Physics"],
+["23 Jan","—","—","सभी Reactions और Formula","Chemistry"],
+["24 Jan","—","—","—","Hindi: पूरा साहित्य और व्याकरण"],
+["25 Jan","—","—","—","English: पूरा Literature और Grammar"],
+["26 Jan","पूरा मॉडल पेपर – समय लगाकर","—","—","Maths"],
+["27 Jan","—","पूरा मॉडल पेपर – समय लगाकर","—","Physics"],
+["28 Jan","—","—","पूरा मॉडल पेपर – समय लगाकर","Chemistry"],
+["29 Jan","—","—","—","Hindi: पूरा मॉडल पेपर"],
+["30 Jan","—","—","—","English: पूरा मॉडल पेपर"],
+["31 Jan","कमजोर अध्यायों का रिवीजन","कमजोर अध्यायों का रिवीजन","कमजोर अध्यायों का रिवीजन","PCM"],
+["1 Feb","—","Physics Viva और File","Chemistry Viva और File","Practical"],
+["2 Feb","गलत सवाल और महत्वपूर्ण सूत्र","—","—","Maths"],
+["3 Feb","—","Definitions और Derivations","Reactions","Physics + Chemistry"],
+["4 Feb","हल्का रिवीजन","हल्का रिवीजन","हल्का रिवीजन","जरूरी सामग्री और अच्छी नींद"]
+]
+};
+const routine=[["09:00–09:20","पिछले दिन का रिवीजन","कल पढ़े हुए टॉपिक दोहराओ"],["09:20–10:50","Maths","Concept + examples + लिखकर सवाल"],["10:50–11:05","ब्रेक","थोड़ा आराम"],["11:05–12:35","Physics","Theory + formulas + derivations + numericals"],["12:35–12:45","ब्रेक","पानी पियो और थोड़ा टहलो"],["12:45–01:45","Chemistry","Theory + reactions + numericals"],["01:45–02:15","लंच","खाना और आराम"],["02:15–03:15","Hindi / English","पाठ पढ़ना + उत्तर लिखना"],["03:15–03:30","ब्रेक","थोड़ा आराम"],["03:30–04:30","Maths / Physics अभ्यास","लिखकर सवाल हल करो"],["04:30–04:40","ब्रेक","छोटा ब्रेक"],["04:40–05:30","Chemistry / Practical","रिएक्शन या practical तैयारी"],["05:30–06:00","टेस्ट और रिवीजन","आज का छोटा टेस्ट"]];
+const practical={phy:["प्रयोग का उद्देश्य और सिद्धांत","उपकरणों के नाम और उपयोग","Circuit Diagram और Ray Diagram","Observation Table और Graph","Least Count, Error और Viva"],chem:["Salt Analysis","Volumetric Analysis","Functional Group Tests","प्रयोगों की विधि और प्रेक्षण","Practical File और Viva"],math:["स्कूल द्वारा निर्धारित गतिविधियाँ","Project और रिकॉर्ड","शिक्षक द्वारा दिए गए प्रश्नों का अभ्यास"]};
+const weekly=["इस सप्ताह Maths के निर्धारित अध्याय पूरे हुए","Physics के सभी निर्धारित टॉपिक पढ़े","Chemistry के सभी निर्धारित टॉपिक पढ़े","Hindi के प्रश्न लिखकर अभ्यास किए","English का लेखन और Literature अभ्यास किया","कम से कम एक PCM टेस्ट दिया","प्रैक्टिकल की तैयारी की","अगले सप्ताह का लक्ष्य बनाया"];
+let state=JSON.parse(localStorage.getItem("mission90")||'{"checks":{},"weekly":{},"practical":{}}');
+const save=()=>localStorage.setItem("mission90",JSON.stringify(state));
+const allRows=Object.entries(data).flatMap(([phase,rows])=>rows.map(r=>({phase,r})));
+function tasksFor(row){return [{id:"m",name:"Maths",desc:row[1]},{id:"p",name:"Physics",desc:row[2]},{id:"c",name:"Chemistry",desc:row[3]},{id:"l",name:"Hindi / English",desc:row[4]},{id:"t",name:"दिन के अंत में 20 मिनट का टेस्ट",desc:"लिखकर अभ्यास और रिवीजन"}]}
+function renderToday(){let day=allRows[0].r;let checks=state.checks["6 Nov"]||{};let done=Object.values(checks).filter(Boolean).length;document.getElementById("todayTasks").innerHTML=tasksFor(day).map(t=>`<label class="task"><input class="check" type="checkbox" ${checks[t.id]?"checked":""} onchange="toggleTask('6 Nov','${t.id}',this.checked)"><span class="tasktext"><b>${t.name}</b><small>${t.desc}</small></span><span class="time">${t.id==="t"?"20 min":"Study"}</span></label>`).join("");document.getElementById("todayCount").textContent=done+"/5";document.getElementById("todayPct").textContent=Math.round(done/5*100)+"%";document.getElementById("todayBar").style.width=(done/5*100)+"%"}
+function toggleTask(date,id,val){state.checks[date]=state.checks[date]||{};state.checks[date][id]=val;save();renderToday();renderStats()}
+function renderSchedule(phase="nov"){let rows=data[phase]||[];let q=document.getElementById("searchDate").value.toLowerCase(),f=document.getElementById("filterSubject").value;let filtered=rows.filter(r=>r.join(" ").toLowerCase().includes(q));if(f!=="all"){let idx={"Maths":1,"Physics":2,"Chemistry":3,"Language / Extra":4}[f];filtered=filtered.filter(r=>r[idx]!=="—")}document.getElementById("scheduleBody").innerHTML=filtered.length?filtered.map(r=>`<tr><td>${r[0]}</td><td><span class="subject math">MATHS</span><br>${r[1]}</td><td><span class="subject physics">PHYSICS</span><br>${r[2]}</td><td><span class="subject chem">CHEMISTRY</span><br>${r[3]}</td><td><span class="subject lang">LANGUAGE / EXTRA</span><br>${r[4]}</td></tr>`).join(""):`<tr><td colspan="5" class="empty">कोई परिणाम नहीं मिला।</td></tr>`}
+function renderRoutine(){document.getElementById("routineList").innerHTML=routine.map(x=>`<div class="routine"><time>${x[0]}</time><div><b>${x[1]}</b><small>${x[2]}</small></div></div>`).join("")}
+function renderChecks(id,items,kind){document.getElementById(id).innerHTML=items.map((x,i)=>`<label class="task"><input class="check" type="checkbox" ${state[kind][i]?"checked":""} onchange="toggleExtra('${kind}',${i},this.checked)"><span class="tasktext"><b>${x}</b></span></label>`).join("")}
+function toggleExtra(kind,i,v){state[kind][i]=v;save();renderStats();renderWeekly()}
+function renderWeekly(){document.getElementById("weeklyChecks").innerHTML=weekly.map((x,i)=>`<label class="task"><input class="check" type="checkbox" ${state.weekly[i]?"checked":""} onchange="toggleExtra('weekly',${i},this.checked)"><span class="tasktext"><b>${x}</b></span></label>`).join("");let n=weekly.filter((_,i)=>state.weekly[i]).length;document.getElementById("weeklyPct").textContent=Math.round(n/weekly.length*100)+"%";document.getElementById("weeklyBar").style.width=n/weekly.length*100+"%"}
+function renderStats(){let total=0,done=0;allRows.forEach(({r})=>{let c=state.checks[r[0]]||{};total+=5;done+=Object.values(c).filter(Boolean).length});document.getElementById("overall").textContent=Math.round(done/total*100)+"%";document.getElementById("doneTotal").textContent=done;document.getElementById("leftTotal").textContent=total-done;document.getElementById("rateTotal").textContent=Math.round(done/total*100)+"%"}
+function showPage(p){document.querySelectorAll(".page").forEach(x=>x.hidden=x.id!==p);document.querySelectorAll("[data-page]").forEach(x=>x.classList.toggle("active",x.dataset.page===p));document.getElementById("pageTitle").textContent=({dashboard:"Good evening, Student 👋",planner:"Your Study Planner",routine:"Your Daily Timetable",progress:"Your Progress",practical:"Practical Preparation"})[p];window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+document.querySelectorAll("[data-phase]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-phase]").forEach(x=>x.classList.toggle("active",x===b));renderSchedule(b.dataset.phase)}));
+document.getElementById("searchDate").addEventListener("input",()=>renderSchedule(document.querySelector("[data-phase].active").dataset.phase));
+document.getElementById("filterSubject").addEventListener("change",()=>renderSchedule(document.querySelector("[data-phase].active").dataset.phase));
+function resetWeekly(){if(confirm("इस सप्ताह के सभी weekly checkpoints reset करें?")){state.weekly={};save();renderWeekly()}}
+function exportData(){let blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="mission90-backup.json";a.click();URL.revokeObjectURL(a.href)}
+document.getElementById("importFile").addEventListener("change",e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();renderToday();renderStats();renderWeekly();alert("Backup restore हो गया।")}catch{alert("यह backup file सही नहीं है।")}};r.readAsText(f)});
+document.getElementById("todayDate").textContent="06 NOV 2026 – 04 FEB 2027";
+renderToday();renderRoutine();renderSchedule();renderStats();renderWeekly();
+renderChecks("phyChecks",practical.phy,"practical");renderChecks("chemChecks",practical.chem,"practical");renderChecks("mathChecks",practical.math,"practical");
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./sw.js").catch(()=>{});
+</script>
+</body></html>
